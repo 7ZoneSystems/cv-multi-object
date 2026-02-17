@@ -7,7 +7,7 @@ Multiple object detection using advanced algorithms
 ## Overview
 
 This project implements a **real-time multi-object perception and tracking pipeline optimized for low-resource hardware** (CPU-only systems, integrated GPUs, and embedded environments).
-The system fuses multiple perception sources — **global visual proposals, depth-based proposals, appearance-adaptive segmentation, temporal geometry memory, and motion tracking** — to produce stable, persistent object identities across frames.
+The system fuses multiple perception sources - **global visual proposals, depth-based proposals, appearance-adaptive segmentation, temporal geometry memory, and motion tracking** to produce stable, persistent object identities across frames.
 
 Unlike heavy neural detection pipelines that require GPUs, this system emphasizes:
 
@@ -25,8 +25,8 @@ It is designed as a **foundational perception layer** that can be integrated int
 
 Download the following files from the latest **GitHub Release**:
 
-* `recon.py` — main perception and tracking pipeline
-* `vision.py` — subordinate IPC (depth/proposal) generator
+* `recon.py` - main perception and tracking pipeline
+* `vision.py` - subordinate IPC (depth/proposal) generator
 
 Place both files in the same directory.
 
@@ -36,7 +36,7 @@ Place both files in the same directory.
 
 Open **two terminals** in the same folder.
 
-### Terminal 1 — Start IPC Vision Source
+### Terminal 1 - Start IPC Vision Source
 
 Run:
 
@@ -48,7 +48,7 @@ This starts the perception proposal stream and creates the IPC pipe used by the 
 
 ---
 
-### Terminal 2 — Start Tracking Engine
+### Terminal 2 - Start Tracking Engine
 
 ```bash
 python recon.py
@@ -163,7 +163,7 @@ Optional:
 
 ## License
 
-MIT License — free to use, modify, and redistribute.
+MIT License - free to use, modify, and redistribute.
 
 ---
 
